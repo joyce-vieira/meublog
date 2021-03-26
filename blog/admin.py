@@ -2,10 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from django.contrib import admin
-from django.urls import path, include
+from .models import Post
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
-]
+admin.site.register(Post)
 
