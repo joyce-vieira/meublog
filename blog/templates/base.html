@@ -1,0 +1,19 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/material-dashboard.css' %}">
+        <title>Blog Django Girls</title>
+    </head>
+    <body>
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">Postagem 2</h1>
+      </div>
+    </div>
+    <div class="">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    </body>
+</html>
